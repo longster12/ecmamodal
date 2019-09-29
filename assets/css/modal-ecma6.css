@@ -1,0 +1,156 @@
+
+body {
+    font-family: "Open Sans", sans-serif;
+    max-width: 700px;
+    line-height: 1.6;
+    font-size: 18px;
+    color: #444;
+    padding: 0 10px
+}
+
+/*    .j2-activate {
+        cursor: pointer;
+        height: 30px;
+        padding: 6px 0px 3px 0px;
+        width: 40%;
+        border: 2px solid #203240;
+        border-radius: 5px;
+        display: inline-block;
+    }*/
+h1 {
+    font-size: 1.6em;
+}
+button {
+    padding: 15px;
+    width: 200px;
+}
+
+.j2-modal {
+    max-width: 640px;
+    width: 90%;
+    /*     max-height: calc(100% - 150px);*/
+    position: relative;
+    min-height: 300px;
+    margin: 5% auto 0;
+    background: #fff;
+    z-index: 9999;
+}
+
+.j2-hidden {
+    display: none;
+}
+
+.j2-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    animation-name:modal;
+    animation-duration: 1s;
+}
+
+.j2-modal-overlay-secondary {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    animation-name:modal;
+    animation-duration: 1s;
+}
+@keyframes  modal {
+    from{opacity:0;}
+    to {opacity:1;}
+
+}
+
+.j2-modal__main-content {
+    padding: 20px 70px 0px 70px;
+    /* max-height: calc(100% - 150px); */
+    position: relative;
+    /* min-height: 300px; */
+    margin: 5% auto 0;
+    background: #fff;
+    z-index: 9999;
+}
+
+.j2-modal-main-content__bodycontent {
+    font-size: .8em;
+}
+
+.j2-modal-main-content__title {
+    margin-bottom: 0px;
+}
+
+.j2-modal-main-content__title:before {
+    content: "";
+    display: block;
+    background: url(../../images/tick.png) no-repeat;
+    width: 30px;
+    height: 50px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+
+.j2-modal__footer {
+    font-weight: 900;
+    text-align: center;
+    font-size: .9em;
+    padding: 20px 49px;
+    border: solid 1px lightgrey;
+    background: white;
+    text-align: center;
+}
+
+.j2-modal-footer__button-close {
+    cursor: pointer;
+    height: 30px;
+    padding: 6px 0px 3px 0px;
+    width: 40%;
+    border: 2px solid #203240;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.j2-modal-footer__button-continue {
+    cursor: pointer;
+    height: 30px;
+    padding: 6px 0px 3px 0px;
+    width: 40%;
+    text-align: center;
+    background: #203240;
+    border: 2px solid #203240;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .j2-modal-footer__button-continue, .j2-modal-footer__button-close {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .j2-modal__main-content {
+        padding: 20px 40px 0px 40px;
+    }
+
+    .j2-modal__footer {
+        padding: 20px 30px;
+    }
+
+    .j2-modal-main-content__title:before {
+        height: 70px;
+
+    }
+    button {
+        padding: 15px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ECMA6 Modal with BEM</title>
+
+    <link rel="stylesheet" href="assets/css/modal-ecma6.css">
+
+
+</head>
+<body>
+
+
+
+<h1>ECMA6 -  Modal - BEM</h1>
+<button class="j2-activate" onclick="openModal()">Open Modal 1</button>
+<button class="j2-activate" onclick="openModal2()">Open Modal 2</button>
+<div class="j2-hidden j2-modal-overlay">
+
+    <div class="j2-modal">
+        <div class="j2-modal__main-content">
+            <div class="j2-modal-main-content__head">
+                <h3 class="j2-modal-main-content__title">Congratulations your Holiday booking has been confirmed.</h3>
+            </div>
+            <wbr>
+            <div class="j2-modal-main-content__bodycontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <wbr>
+        </div>
+        <div class="j2-modal__footer">
+            <div type="button" class="j2-modal-footer__button-close"><i>Cancel</i></div>
+            <div href="http://jet2.com" type="button" class="j2-modal-footer__button-continue"><i>Continue</i></div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<div class="j2-hidden j2-modal-overlay-secondary">
+
+    <div class="j2-modal">
+        <div class="j2-modal__main-content">
+            <div class="j2-modal-main-content__head">
+                <h3 class="j2-modal-main-content__title">The ability to have more than one modal on the page. </h3>
+            </div>
+            <wbr>
+            <div class="j2-modal-main-content__bodycontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <wbr>
+        </div>
+        <div class="j2-modal__footer">
+            <div type="button" class="j2-modal-footer__button-close"><i>Cancel</i></div>
+            <div href="http://jet2.com" type="button" class="j2-modal-footer__button-continue"><i>Continue</i></div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<script src="assets/js/modal.js"></script>
+
+</body>
+</html>
