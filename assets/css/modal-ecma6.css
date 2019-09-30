@@ -110,8 +110,7 @@ button {
 
 .j2-modal-footer__button-close {
     cursor: pointer;
-    height: 30px;
-    padding: 6px 0px 3px 0px;
+    padding: 6px 0px;
     width: 40%;
     border: 2px solid #203240;
     border-radius: 5px;
@@ -120,8 +119,7 @@ button {
 
 .j2-modal-footer__button-continue {
     cursor: pointer;
-    height: 30px;
-    padding: 6px 0px 3px 0px;
+    padding: 6px 0px;
     width: 40%;
     text-align: center;
     background: #203240;
